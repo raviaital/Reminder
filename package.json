@@ -1,0 +1,24 @@
+{
+  "name": "reminder",
+  "version": "1.0.0",
+  "description": "Full Stack Application mimicking Apple Reminder",
+  "homepage": "https://github.com/raviaital/Reminder#readme",
+  "bugs": {
+    "url": "https://github.com/raviaital/Reminder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raviaital/Reminder.git"
+  },
+  "license": "ISC",
+  "author": "Ravi Aital",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
