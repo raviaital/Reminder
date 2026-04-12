@@ -1,12 +1,11 @@
 import express from 'express'; // Imports Express.js.
+import reminderRoutes from './routes/reminderRoutes.js';
 
 const app = express() // Creates an Express application instance.
 const port = process.env.PORT
 
-// Routes
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-}) // Defines a route (/) that returns Hello, World!.
+// Use reminder routes
+app.use('/reminders', reminderRoutes)
 
 // Listen to PORT
 app.listen(port, () => {
