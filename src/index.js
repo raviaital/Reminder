@@ -4,8 +4,8 @@ import reminderRoutes from './routes/reminderRoutes.js';
 const app = express() // Creates an Express application instance.
 const port = process.env.PORT
 
-// Use reminder routes
-app.use('/reminders', reminderRoutes)
+app.use(express.json()) // Middleware to parse JSON
+app.use('/reminders', reminderRoutes) // Use reminder routes
 
 // Listen to PORT
 app.listen(port, () => {
